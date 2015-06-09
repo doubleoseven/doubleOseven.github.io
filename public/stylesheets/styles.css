@@ -78,7 +78,7 @@ body {
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #A3BFC6 ;
   font-weight: normal;
-  background: black ;
+  background: #074773;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: red;
+  color: #EC4E3B;
   margin: 0 0 10px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -110,7 +110,7 @@ h2 {
 }
 
 h4, h5, h6 {
-  color: #e8e8e8;
+  color: #edd1c6;
 }
 
 h3 {
@@ -122,13 +122,13 @@ h3 {
 }
 
 a {
-  color: #49B1F7; 
+  color: #fdf1e3; 
   font-weight: 400;
   text-decoration: none;
 }
 
 a:hover {
-  color: #EC4E3B; 
+  color: #c5939e; 
 }
 
 a:hover, a:active, a:focus, a:visited  {
@@ -346,5 +346,5 @@ footer .right{
 }
 
 #title #sitename,.resume span,.resume h2 {
-  color: #EC4E3B;
+  color: #edd1c6;
 }
