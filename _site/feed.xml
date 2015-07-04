@@ -5,9 +5,24 @@
     <description></description>
     <link>doubleoseven.github.io/</link>
     <atom:link href="doubleoseven.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 10 Jun 2015 01:02:01 +0300</pubDate>
-    <lastBuildDate>Wed, 10 Jun 2015 01:02:01 +0300</lastBuildDate>
+    <pubDate>Sat, 04 Jul 2015 05:39:35 +0300</pubDate>
+    <lastBuildDate>Sat, 04 Jul 2015 05:39:35 +0300</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
+    
+      <item>
+        <title>Welcome to ze blog</title>
+        <description>
+</description>
+        <pubDate>Fri, 03 Jul 2015 00:00:00 +0300</pubDate>
+        <link>doubleoseven.github.io/welcome</link>
+        <guid isPermaLink="true">doubleoseven.github.io/welcome</guid>
+        
+        <category>Introduction</category>
+        
+        <category>Random</category>
+        
+        
+      </item>
     
   </channel>
 </rss>
