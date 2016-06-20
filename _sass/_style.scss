@@ -1,0 +1,49 @@
+.introduction
+{
+	text-align: center;
+	font-family: Cartoon;
+	font-size: 30px;
+}
+
+.title-site
+{
+	text-align: center;
+	color: red;
+	font-family: AlexBrush;
+	font-size: 50px;
+ 	font-weight: 300;
+ 	line-height: 56px;
+ 	letter-spacing: -1px;
+	margin-bottom: 0;
+  	float: left;
+}
+
+.links
+{
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+	font-size: 25px;
+	color: green;
+	font-family: Cartoon;
+}
+
+
+@font-face {
+	font-family: Raven;
+	src: url(fonts/raven.ttf);
+}
+
+@font-face {
+	font-family: HomemadeApples;
+	src: url(fonts/homeapples.ttf);
+}
+
+@font-face {
+	font-family: Cartoon;
+	src: url(fonts/cartoon.ttf);
+}
+
+@font-face {
+	font-family: AlexBrush;
+	src: url(fonts/brush.ttf);
+}
