@@ -16,7 +16,7 @@ If you've never heard of Jekyll here's some information about it:
 - It is the engine behind Github pages, a GitHub feature that allows you to host websites based on your GitHub repositories. <br>
 - It supports front-end frameworks such as Bootstrap <br> <br>
 
-So the first step was to setup Github pages  (because long story short: Github pages uses Jekyll) using my github account, which I had already done sometime in the past, however I had to clean stuff that was already in there so I that could start with a brand new Jekyll project.
+So the first step was to setup Github pages using my github account, which I had already done sometime in the past, however I had to clean stuff that was already in there so I that could start with a brand new Jekyll project.
 
 <div class="col">
               <ul class="list-inline intro-social-buttons text-center">
