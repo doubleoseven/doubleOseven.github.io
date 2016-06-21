@@ -176,7 +176,7 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .post-list {
@@ -191,6 +191,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+
 }
 
 .post-link {
@@ -198,6 +199,13 @@
     font-size: 24px;
 }
 
+.home
+{
+  font-family: Cartoon;
+}
+.post{
+  font-family: Cartoon;
+}
 
 
 /**

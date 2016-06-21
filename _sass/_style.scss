@@ -1,10 +1,3 @@
-.introduction
-{
-	text-align: center;
-	font-family: Cartoon;
-	font-size: 30px;
-}
-
 .title-site
 {
 	text-align: center;
@@ -15,18 +8,54 @@
  	line-height: 56px;
  	letter-spacing: -1px;
 	margin-bottom: 0;
-  	float: left;
+  float: left;
+	position: absolute;
+	top: 35px;
 }
 
-.links
+.me
 {
-	text-align: center;
-	padding: 20px 20px 20px 20px;
-	font-size: 25px;
-	color: green;
-	font-family: Cartoon;
+ 	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-style: dotted;
+	border-radius: 50px;
+	overflow: hidden;
+	border-width: thick;
+	border-color: rgb(150, 150, 120);
 }
 
+.aboutme-content
+{
+	margin-bottom: $spacing-unit;
+	text-align: center;
+
+	h2 {
+			font-size: 32px;
+			text-decoration: underline;
+
+			@include media-query($on-laptop) {
+					font-size: 28px;
+			}
+	}
+
+	h3 {
+			font-size: 26px;
+
+			@include media-query($on-laptop) {
+					font-size: 22px;
+			}
+	}
+
+	h4 {
+			font-size: 20px;
+
+			@include media-query($on-laptop) {
+					font-size: 18px;
+			}
+	}
+}
 
 @font-face {
 	font-family: Raven;
