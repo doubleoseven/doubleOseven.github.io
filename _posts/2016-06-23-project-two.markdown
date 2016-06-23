@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project Two - Day Generator"
+title:  "Project 2 - Day Generator"
 date:   2016-06-23 23:51:09 +0300
 categories: 
 ---
