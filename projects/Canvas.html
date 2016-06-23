@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+
+	<style>
+
+	.canvas
+	{
+		background: teal;
+		border-style:dashed;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<canvas id="myCanvas" class="canvas" width="500" height="500">
+
+	</canvas>
+
+
+	<script>
+
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = "#901030";
+	ctx.fillRect(200, 400, 100, 20);
+	
+	</script>
+	
+
+</body>
+
+</html>

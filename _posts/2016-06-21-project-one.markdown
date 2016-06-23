@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project 1 - Setting up this website"
-date:   2016-06-20 23:51:09 +0300
+date:   2016-06-21 23:51:09 +0300
 categories: 
 ---
 Due to my lack of dedication in a lot of things in life, I’ve decided to start the 180 day project as an attempt to challenge myself and improve my coding and creativity skills. I had the idea after coming across this [blog](http://athougcodesatnight.tumblr.com/tagged/180dayproject) over here. (Thank you Athoug for the brilliant idea! :D)
