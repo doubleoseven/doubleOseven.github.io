@@ -6,9 +6,9 @@ categories:
 ---
 
 <div class="day">
-		<button onclick="CurrentDay()">  What is today? </button>
+		<button  class="daybutton" onclick="CurrentDay()">  What is today? </button>
 
-		<button onclick="RandomDay()"> Random Day Of The Week </button>
+		<button class="daybutton" onclick="RandomDay()"> Random Day Of The Week </button>
 
 		<div id="today" class="results">  <p>  </p>  </div>
 		<div id="randomday" class="results"> </div>

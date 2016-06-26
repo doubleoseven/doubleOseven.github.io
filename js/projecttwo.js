@@ -2,7 +2,7 @@
 
 		var days = [];
 		var months = [];
-		days.push("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+		days.push("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 		months.push("Jan", "Feb" ,"March" , "April",  "May","June",
 		"July", "Aug", "Sept", "Oct", "Nov", "Dec");
 
@@ -19,11 +19,7 @@
 		{
 			// This create data variable with which we can get the current day
 			var today = document.getElementById("today");
-			today.innerHTML = "Today is " + days[day.getDay()-1] + ", " +
+			// today.innerHTML = day.getDay();
+			today.innerHTML = "Today is " + days[day.getDay()] + ", " +
 			months[day.getMonth()] + " " + day.getDate() + " " + day.getFullYear();
-		}
-
-		function Tomorrow()
-		{
-
 		}

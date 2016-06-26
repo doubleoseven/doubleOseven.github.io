@@ -57,7 +57,7 @@
 	}
 }
 
-button
+.daybutton
 {
 	color: black;
 	border-radius: 20px;
@@ -66,19 +66,47 @@ button
 	font-size: 30px;
 }
 
+
+
 .day
 {
 	text-align: center;
-
-
 	font-family: fantasy;
 	font-size: 30px;
 }
 
-@font-face {
-	font-family: Raven;
-	src: url(fonts/raven.ttf);
+#video
+{
+	visibility: hidden;
 }
+
+.survey
+{
+	text-align: center;
+	font-family: Cartoon;
+}
+
+.surveybutton
+{
+	background-image: url("svg/cat.svg");
+	background-size: cover;
+	background-position: center;
+
+	font-size: 60px;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+
+	color: pink;
+	font-family: Cartoon;
+	font-weight: bold;
+}
+
+#result
+{
+	font-size: 30px;
+}
+
 
 @font-face {
 	font-family: HomemadeApples;

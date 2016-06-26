@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	
+	<button class="surveybutton" onclick="Start()"> Start</button>
+	
+	<div id="result" class="result">  </div>
+		
+		<script>
+		
+		
+		var mScore = 0;
+		var mQuestions = 
+		[
+			['How many cats are there in the world?', 1000],
+			['Are cats cute?', 'yes']
+		];
+		
+		function Start() 
+		{
+			for(var i = 0; i < mQuestions.length; i++)
+			{
+				AskQuestion(mQuestions[i]);
+			}
+			
+			PrintResult(); 
+		}
+				
+		
+
+		function AskQuestion(question)
+		{
+			var answer = prompt(question[0], " "); 
+			if(answer == question[1])
+			{
+				alert("Correct!");
+				mScore++;
+			}
+			else
+			{
+				alert("Wrong answer! The correct answer is " + question[1]);
+			}
+		}
+		
+		function PrintResult () {
+			
+			var _result = document.getElementById("result")
+			
+			if(mScore == mQuestions.length)
+			{
+				_result.innerHTML = null;
+				_result.innerHTML = "Congratulations! You got all the questions correct!";
+
+			} else 
+			{
+				_result.innerHTML = null;
+				_result.innerHTML = "You got " + mScore + " out of " + mQuestions.length + " correct";
+			}
+			
+			mScore = 0;
+		}
+		
+		</script>
+	</body>
+</html>
