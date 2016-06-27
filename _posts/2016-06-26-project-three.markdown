@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project 3 - How well do you know your cats? XD"
+title:  "Project 3 - How well do you know your cat? XD"
 date:   2016-06-26 23:51:09 +0300
 categories: 
 ---
@@ -19,7 +19,9 @@ categories:
 
 	</div>
 
-	<!-- <button onclick=""> Show BlogPost </button> -->
+</div>
 
+<div class="blogpost">
+		<a href="/blogs/project3.html"> Blog Post </a>
 </div>
 

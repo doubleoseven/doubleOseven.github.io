@@ -1,6 +1,9 @@
-<div class="blogpost">
+---
+layout: post
+date:   2016-06-26 23:51:09 +0300
+---
 
-Blog post:
+<h2> Day Generator - <a href="http://doubleoseven.github.io/2016/06/23/project-two.html"> Project 2 </a></h2>
 
 For the previous two projects, I tried to get my hands a little dirty with Javascript. Although, I'm familiar with JS, I wanted to review some of the syntax and what better way to do that than write some code. 
 <br> <br>
@@ -32,8 +35,37 @@ In order to acheive this, all I did was use two arrays to store the number of da
  {% highlight javascript %}
 
 	today.innerHTML = "Today is " + days[day.getDay()] + ", " +
-			months[day.getMonth()] + " " + day.getDate() + " " + day.getFullYear();
+	months[day.getMonth()] + " " + day.getDate() + " " + day.getFullYear();
 
-{% endhighlight %}And that's pretty much it!
+{% endhighlight %}
 
+The result:
+
+<div class="col">
+              <ul class="list-inline intro-social-buttons text-center">
+                       <img src="/images/currentdate.png" alt="Smiley face" align="middle" class="img-responsive" > 
+               </ul>
 </div>
+
+And that's pretty much it!
+
+<br>
+The second button just gets a random number and uses it to display a day within the array:
+
+ {% highlight javascript %}
+
+	// Math.Random returns a number between 0 and 1
+	var random = Math.floor((Math.random() * (days.length-1)) + 1);
+	_randomDay.innerHTML = "Here's a random day of the week: " + days[random];
+
+{% endhighlight %}
+
+The result: 
+
+<div class="col">
+              <ul class="list-inline intro-social-buttons text-center">
+                       <img src="/images/randomday.png" alt="Smiley face" align="middle" class="img-responsive" > 
+               </ul>
+</div>
+
+Thank you for reading!

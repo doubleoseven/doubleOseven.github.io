@@ -107,6 +107,17 @@
 	font-size: 30px;
 }
 
+.blogpost
+{
+	position: fixed;
+	bottom: 8px;
+	right: 18px;
+
+	font-family: monospace;
+	font-size: 30px;
+	border: 10px;
+	border-style: dashed;
+}
 
 @font-face {
 	font-family: HomemadeApples;

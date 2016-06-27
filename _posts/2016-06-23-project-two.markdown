@@ -12,4 +12,9 @@ categories:
 
 		<div id="today" class="results">  <p>  </p>  </div>
 		<div id="randomday" class="results"> </div>
+
+</div>
+
+<div class="blogpost">
+		<a href="/blogs/project2.html"> Blog Post </a>
 </div>
