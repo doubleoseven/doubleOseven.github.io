@@ -68,4 +68,29 @@ The result:
                </ul>
 </div>
 
+Finally, I added in a link to each of the associated blog posts for each project. It can be found 'fixed' at the bottom left corner of each project page. I got the idea after reading up on using the "position" property in CSS. The result is the following:
+
+<div class="col">
+              <ul class="list-inline intro-social-buttons text-center">
+                       <img src="/images/blogpost.png" alt="Smiley face" align="middle" class="img-responsive" > 
+               </ul>
+</div>
+
+{% highlight css %}
+
+.blogpost
+{
+	position: fixed;
+	bottom: 8px;
+	right: 18px;
+
+	font-family: monospace;
+	font-size: 30px;
+	border: 10px;
+	border-style: dashed;
+}
+
+{% endhighlight %}
+
+
 Thank you for reading!
