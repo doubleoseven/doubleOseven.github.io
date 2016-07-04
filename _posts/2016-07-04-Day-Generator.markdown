@@ -1,11 +1,14 @@
 ---
 layout: post
 date:   2016-06-26 21:51:09 +0300
-title: "Reviewing Javascript "
+title: "Brushing up on Javascript "
 categories: blog
 ---
-
-<h2> Day Generator - <a href="http://doubleoseven.github.io/2016/06/23/project-two.html"> Day 002 </a></h2>
+{% for post in site.posts %}
+		{% if post.day == '001' %}
+<h2> Day Generator - <a href="{{ post.url | prepend: site.baseurl}}"> Day 002 </a></h2>
+		{% endif %}
+{% endfor %}
 
 For the previous two projects, I tried to get my hands a little dirty with Javascript. Although, I'm familiar with JS, I wanted to review some of the syntax and what better way to do that than write some code.
 <br> <br>
