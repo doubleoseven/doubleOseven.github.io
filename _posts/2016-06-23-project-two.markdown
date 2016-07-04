@@ -16,6 +16,6 @@ categories: project
 
 </div>
 
-<div class="blogpost">
+<!-- <div class="blogpost">
 		<a href="/blogs/project2.html"> Blog Post </a>
-</div>
+</div> -->
