@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Projects
 ---
 
 <div class="home">
@@ -11,7 +12,7 @@ layout: default
         {% if post.categories contains 'project' %}
       <li>
         <h2>
-        <span> Day  {{ post.day }} - </span> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
+        <span> Day  {{ post.day }} - </span> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
       {% endif %}
