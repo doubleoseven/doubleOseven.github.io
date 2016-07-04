@@ -1,15 +1,17 @@
 ---
 layout: post
-date:   2016-06-26 23:51:09 +0300
+date:   2016-06-26 21:51:09 +0300
+title: "Reviewing Javascript "
+categories: blog
 ---
 
-<h2> Day Generator - <a href="http://doubleoseven.github.io/2016/06/23/project-two.html"> Project 2 </a></h2>
+<h2> Day Generator - <a href="http://doubleoseven.github.io/2016/06/23/project-two.html"> Day 002 </a></h2>
 
-For the previous two projects, I tried to get my hands a little dirty with Javascript. Although, I'm familiar with JS, I wanted to review some of the syntax and what better way to do that than write some code. 
+For the previous two projects, I tried to get my hands a little dirty with Javascript. Although, I'm familiar with JS, I wanted to review some of the syntax and what better way to do that than write some code.
 <br> <br>
-So the first project is extremely simple, it's almost embarressing. (However, something is always better than nothing). Using html, I added two buttons to the page: the first displays today's date, in the following format: 
+So the first project is extremely simple, it's almost embarressing. (However, something is always better than nothing). Using html, I added two buttons to the page: the first displays today's date, in the following format:
 <br><br>
-Day of Week, Month Day Year. 
+Day of Week, Month Day Year.
 <br> <br>
 In order to acheive this, all I did was use two arrays to store the number of days and months as strings.
 
@@ -20,7 +22,7 @@ In order to acheive this, all I did was use two arrays to store the number of da
 
 {% endhighlight %}
 
- I then used the 'new Date()' function to get a reference to the date variable and stored it in a variable called day. 
+ I then used the 'new Date()' function to get a reference to the date variable and stored it in a variable called day.
 
 
 {% highlight javascript %}
@@ -30,7 +32,7 @@ In order to acheive this, all I did was use two arrays to store the number of da
 {% endhighlight %}
 
 
- I then used 'day' to call on the functions getDay(),  getMonth(), getDate() and getFullYear() in order to get the information I needed. All the functions return integers, so I passed the result of getDay() and getMonth() into the arrays I created to display their string counterparts. 
+ I then used 'day' to call on the functions getDay(),  getMonth(), getDate() and getFullYear() in order to get the information I needed. All the functions return integers, so I passed the result of getDay() and getMonth() into the arrays I created to display their string counterparts.
 
  {% highlight javascript %}
 
@@ -43,7 +45,7 @@ The result:
 
 <div class="col">
               <ul class="list-inline intro-social-buttons text-center">
-                       <img src="/images/currentdate.png" alt="Smiley face" align="middle" class="img-responsive" > 
+                       <img src="/images/currentdate.png" alt="Smiley face" align="middle" class="img-responsive" >
                </ul>
 </div>
 
@@ -60,11 +62,11 @@ The second button just gets a random number and uses it to display a day within 
 
 {% endhighlight %}
 
-The result: 
+The result:
 
 <div class="col">
               <ul class="list-inline intro-social-buttons text-center">
-                       <img src="/images/randomday.png" alt="Smiley face" align="middle" class="img-responsive" > 
+                       <img src="/images/randomday.png" alt="Smiley face" align="middle" class="img-responsive" >
                </ul>
 </div>
 
@@ -72,7 +74,7 @@ Finally, I added in a link to each of the associated blog posts for each project
 
 <div class="col">
               <ul class="list-inline intro-social-buttons text-center">
-                       <img src="/images/blogpost.png" alt="Smiley face" align="middle" class="img-responsive" > 
+                       <img src="/images/blogpost.png" alt="Smiley face" align="middle" class="img-responsive" >
                </ul>
 </div>
 

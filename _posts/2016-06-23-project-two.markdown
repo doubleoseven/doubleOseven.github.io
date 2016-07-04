@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Project 2 - Day Generator"
+day: "001"
+title:  "Day Generator"
 date:   2016-06-23 23:51:09 +0300
-categories: 
+categories: project
 ---
 
 <div class="day">
