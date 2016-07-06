@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+
+body
+{
+   background-color: white;
+}
+
+.color
+{
+	background-color: red;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+
+var mScore = 0;
+
+var mQuestions = 
+		[
+			['How many vocal sounds does a cat have?', '100'],
+			['How many teeth does an adult cat have?', '30'],
+			['Cats greet one another using their: ______', 'Nose'],
+			['A group of kittens is called a: _____', 'Kindle'],
+			['A female cat is called a: ______', 'Queen'],
+			['A cat lover is called a: ______ (hint: its greek)', 'Ailurophilia'],
+			['What is the largest breed of cat?', 'Ragdoll'],
+			['Cats don’t have sweat glands over their bodies like humans do. True or False?', 'True'],
+			['How many bones does a cat have in its body?', '230'],
+			['In what version of Cinderella is the the benevolent fairy godmother figure a cat?', 'Italian'],
+			['How many whiskers does a cat have on each side of its face?', '12']
+		];
+
+var currentQuesion = 0;
+var surveyFinished = false;
+
+$(document).ready(function() 
+{
+
+
+	$('.main-content').hide();
+
+	$('.surveybutton').click(function()
+	{
+		$('.main-content').show();
+		$('.surveybutton').hide();
+		AskQuestion(mQuestions[currentQuesion]);
+
+	});
+
+
+	function AskQuestion(question)
+	{
+		$('.question').text(question[0]);
+	}
+
+	function CheckAnswer(question)
+	{
+		// console.log($('.answer').val())
+		if($('.answer').val().toLowerCase() == question[1].toLowerCase())
+		{
+			console.log("Correct");
+		}
+		else
+		{
+			$('body').animate({backgroundColor: 'red'}, "slow");
+			console.log("Wrong");
+		}
+			
+	}
+
+	$('.next').click(function()
+	{
+		CheckAnswer(mQuestions[currentQuesion]);
+		if(!surveyFinished)
+		{
+			if($('.answer').val())
+			{
+				if(!QuestionsFinished())
+				{	
+					currentQuesion++;
+					AskQuestion(mQuestions[currentQuesion]);
+				}
+			}
+			else
+			{
+				console.log("enter something");
+			}
+		}
+
+		$('.answer').val("");
+	});
+
+	function QuestionsFinished()
+	{
+		if(currentQuesion == (mQuestions.length -1))
+		{
+			surveyFinished = true;
+		}
+		else
+			surveyFinished = false;
+
+		return surveyFinished;
+	}
+
+});
+
+</script>
+
+</head>
+
+
+<body>
+
+<button class="surveybutton"> Start</button>
+
+<div class="main-content">
+<form> 
+
+	<div class="question">
+		Question Goes Here
+
+	</div>
+
+	<input type="text" class="answer">
+	<input type="button" value="Next" class="next">
+
+	</form>
+
+</div>
+
+</body>
+
+</html>
