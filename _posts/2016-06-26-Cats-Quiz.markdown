@@ -1,8 +1,0 @@
----
-layout: post
-date:   2016-06-26 23:51:09 +0300
-title: "Javascript and cats"
-categories: blog
----
-
-Coming Soon! XD
