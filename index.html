@@ -1,25 +1,142 @@
----
-layout: default
-title: Projects
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoubleOSevenMakes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<div class="home">
-  <h1 class="page-heading">Projects</h1>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 40px 20px;
+    }
 
+    h1 {
+      font-size: 3rem;
+      color: white;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-        {% if post.categories contains 'project' %}
-      <li>
-        <h2>
-        <span> Day  {{ post.day }} - </span> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+    .wrap {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px 40px;
+      margin-bottom: 40px;
+      max-width: 800px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
 
+    .wrap h2 {
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+      line-height: 1.6;
+      font-weight: 400;
+    }
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      max-width: 900px;
+    }
 
-</div>
+    .button {
+      position: relative;
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+    }
+
+    .button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .button:hover::before {
+      opacity: 1;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(245, 87, 108, 0.6);
+    }
+
+    .button:active {
+      transform: translateY(0);
+    }
+
+    .button span {
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .wrap {
+        padding: 20px;
+      }
+
+      .wrap h2 {
+        font-size: 1.2rem;
+      }
+
+      .button {
+        padding: 14px 24px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>DoubleOSevenMakes</h1>
+  
+  <div class="wrap">
+    <h2>Welcome to my page - where I showcase some of my personal projects!</h2>
+  </div>
+  
+  <div class="links">
+    <a href="https://www.linkedin.com/in/yumnaazizansari/" class="button"><span>LinkedIn</span></a> 
+    <a href="https://themuslimahtigress.blogspot.com/" class="button"><span>My Blog</span></a>
+    <a href="https://drive.google.com/drive/folders/1krMfEV4NCKH_VLUW0pGSpGo8yWjURpi5?usp=sharing" class="button"><span>Bunny Trouble!</span></a> 
+    <a href="https://morning-duas-for-zombie-apocolopyse.netlify.app/" class="button"><span>Zombie Adkar Website</span></a>
+    <a href="https://github.com/doubleoseven" class="button"><span>Github</span></a>
+  </div>
+</body>
+</html>
