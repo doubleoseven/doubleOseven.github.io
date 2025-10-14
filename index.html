@@ -104,6 +104,121 @@
       z-index: 1;
     }
 
+
+    .Contact {
+            background-color: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 20px 30px;
+            max-width: 500px;
+            max-height:400px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            line-height: 1.0;
+            text-align: center;
+            margin-top: 15px;
+
+        }
+
+        .Contact a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            font-weight: 500;
+        }
+
+        .Contact a:hover {
+            color: #79c0ff;
+            text-decoration: underline;
+        }
+
+  
+        h3 {
+          color: white;
+        }
+
+          /* LinkedIn Icon */
+        .linkedin-icon {
+            width: 80px;
+            height: 80px;
+            background: #0077b5;
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .linkedin-icon:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .linkedin-icon::before {
+            content: 'in';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 42px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        /* YouTube Icon */
+        .youtube-icon {
+            width: 80px;
+            height: 80px;
+            background: #FF0000;
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .youtube-icon:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Play button triangle */
+        .youtube-icon::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            width: 0;
+            height: 0;
+            border-left: 25px solid white;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+               .label {
+            text-align: center;
+            color: white;
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .icon-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
     @media (max-width: 768px) {
       h1 {
         font-size: 2rem;
@@ -132,11 +247,29 @@
   </div>
   
   <div class="links">
-    <a href="https://www.linkedin.com/in/yumnaazizansari/" class="button"><span>LinkedIn</span></a> 
     <a href="https://themuslimahtigress.blogspot.com/" class="button"><span>My Blog</span></a>
     <a href="BunnyTrouble.html" class="button"><span>Bunny Trouble!</span></a> 
     <a href="https://morning-duas-for-zombie-apocolopyse.netlify.app/" class="button"><span>Zombie Adkar Website</span></a>
     <a href="https://github.com/doubleoseven" class="button"><span>Github</span></a>
+    
+  </div>
+  <br>
+
+  <div class = "Contact">
+    <h3>Contact Me: </h3>
+
+    <div class="icon-container">
+        <div class="icon-wrapper">
+            <div class="linkedin-icon"></div>
+            <div class="label"> <a href="https://www.linkedin.com/in/yumnaazizansari/">LinkedIn </a></div>
+        </div>
+        
+        <div class="icon-wrapper">
+            <div class="youtube-icon"></div>
+            <div class="label"><a href="https://www.linkedin.com/in/yumnaazizansari/">YouTube</a></div>
+        </div>
+
+  </div>
   </div>
 </body>
 </html>
